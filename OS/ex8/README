@@ -1,0 +1,45 @@
+/**************************
+ * ex8a: Merge arrays- Threads
+ * ============================================================================
+ * The program creates 5 threads. Every one of them allocates an array and fills
+ * it with numbers randomally. Every thread sorts it own array and
+ * send it back to the main process. In the end the main process sort and
+ * merges them.
+ * array and prints the sorted array.
+ *
+ *
+ * Written by: Tomer Fisher - 205364151, Shahar Aviv - 203489307
+ * LogIn: Tomerfi, shaharav
+ *
+ * Compile: gcc ex8a.c -o thread -lpthread
+ * Run: ./thread
+ * ============================================================================
+ * Input: None.
+ * ============================================================================
+ * Output: The merged array.
+ * ============================================================================
+ * */
+ 
+ /**************************
+ * ex8b: Winning row- Threads
+ * ============================================================================
+ * The program creates 4 threads. The main program is the "main" thread that
+ * initilaize a matrix with random numbers. 
+ * Each thread is in charge of a row in the
+ * matrix. Each thread randomly generates numbers and checks in the number is
+ * found in his row. If it is, it is replaced with zero.
+ * The first row that fills with zeros first wins and ends the other threads
+ * that are still running.
+ *
+ *
+ * Written by: Tomer Fisher - 205364151, Shahar Aviv - 203489307
+ * LogIn: Tomerfi, shaharav
+ *
+ * Compile: gcc ex8b.c -o thread -lpthread
+ * Run: ./thread
+ * ============================================================================
+ * Input: None.
+ * ============================================================================
+ * Output: The number of the first row that fills with zeros.
+ * ============================================================================
+ * */
