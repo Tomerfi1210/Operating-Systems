@@ -1,0 +1,18 @@
+File: ex0.cc
+Finding the maximum row
+============================================================================
+Written by: Tomer Fisher- 205364151 , Shahar Aviv- 203489307
+Login: tomerfi, shaharav
+
+The program reads the input file and inserts the data into a struct that
+holds a 2d-dynamic array.
+
+Compile: gcc -Wall ex0.c -o ex0
+Run: ex0 "file"
+
+Input: 	An input file;
+      
+Output: Returns the row that holds the highest values when checking every cell the row
+with the other values in the column. If a row like this does not exist, the program returns -1. 
+
+RunTime: m*n^3 when m is the lines_len array and n is the 2nd array
