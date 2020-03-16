@@ -1,3 +1,3 @@
 # Operating-Systems
-Operating Systems Courses (Linux &amp; Windows)
-Linux C projects that I wrote during my degree.
+Operating Systems Course (Linux &amp; Windows).
+C projects that I wrote during my degree.
