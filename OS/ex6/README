@@ -1,0 +1,30 @@
+/* ============================================================================
+ * Name:       ex6a
+ * Written by: Tomer Fisher, Shahar Aviv
+ * ID:         205364151, 203489307
+ * Login:      tomerfi, shaharav
+ * Program:    GCD and Primes servers (Socket)
+ * ============================================================================
+ *
+ * Compile: gcc -Wall ex6a.c -0 ex6a
+ * Run: ex6a
+ * Input: after passing the data in argument vector:
+ * 0 for gcd, 1 for primes, 2 to exit.
+ * Output: if 0- the gcd of 2 num entered, if 1- all its primes, if 2- exit.
+
+ * This program has 2 serever- one that calculates the GCD of 2 numbers and the
+ * other that breaks a number to its primes (up to 100).
+ * the client gets ip and port for both servers through the argument vector,
+ * and the servers get a port and connect the client with the servers.
+ * user enters a num:
+ * if user enters 0- GCD server is activated and 2 numbers need to be entered 
+ * and server will return the gcd.
+ * if user enters 1- Primes server is activated and 1 number needs to be 
+ * entered and the prime factors of that number will return to client.
+ * if user enters 2- list is freed and program will end.
+ * else- program ends.
+ * the data will be sent through the argument vector, and by pressing ^C the 
+ * list will be freed and servers will end.
+ * ============================================================================
+ */
+
