@@ -1,0 +1,40 @@
+//===============================================================================
+/*  written by :
+ 		(*) Tomer Fisher - 205364151 - tomerfi
+ 		(*) Shahar Aviv - 203489307 - shaharav
+===============================================================================
+Ex3a: Pipe part a
+===============================================================================
+In program the father gives birth to five children of each type, meaning
+that each child solves the problem on a tower of a given size, when the sizes
+will be: 5, 10, 15, 20, 25.
+The children will be sent to Dad through the tube and the tower size they were
+asked to solve, and the time
+The running they needed to solve the problem.
+The father will print the minimum runtime, maximum and average time required
+to solve the problem on
+Tower size n.
+The children will continue to write their information to the standard output,
+but the information will reach the father
+Through a tube. The children work concurrently during the program.
+//=============================================================================
+compile : gcc -Wall ex3a.c -o ex3a
+//=============================================================================
+
+
+
+
+/*  written by :
+ 		(*) Tomer Fisher - 205364151 - tomerfi
+ 		(*) Shahar Aviv - 203489307 - shaharav
+===============================================================================
+Ex3b: Pipe part b
+===============================================================================
+In this program the father makes an array that is filled with random numbers
+from 0 to 1000 , then it splits it into 5 parts that each child (5) sorts them
+by bubble sort and then the father merges all of them from one array into
+another sorted
+//===========================================================================*/
+compile : gcc -Wall ex3b.c -o ex3b
+//===========================================================================
+
