@@ -23,18 +23,15 @@
 
 /* ============================================================================
 
- * Name:       ex1a
+ * Name:       ex1b
  * Written by: Tomer Fisher, Shahar Aviv
  * ID:         205364151, 203489307
  * Login:      tomerfi, shaharav
  * Program:    Calculator
  * ============================================================================
  *
- * This program creates 5 children, and the user enters one of the four
- * commands: plus- to add 2 nums, minus- to decrease 2 nums, sum- to add each
- * number of the string, max- to return the max num from the string.
- * program will convert the string to ints and do the action requested or type
- * exit to quit.
+ * This program recieves operation from user- plus,minus,sum,max.
+ * the program creates child process and operate the specific operation
  *
  * Compile: gcc -Wall ex1b.c -0 ex1b
  * Run: ex1b
