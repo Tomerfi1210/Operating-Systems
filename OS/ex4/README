@@ -1,0 +1,147 @@
+/**************************
+ * ex4a1: GCD Server
+ * ============================================================================
+ *
+ * gcd server creat a queue and then runs infinitly,
+ * waits for input from client. waiting for result from gcd algo and then 	
+ * send it to client
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4a1.c -o ex4a1
+ * Run: ./ex4a1
+ * ============================================================================
+ * Input: got 2 numbers from client
+ * ============================================================================
+ * Output: send gcd result back to client
+ * ============================================================================
+ */
+
+/**************************
+ * ex4a2: Prime Factor Server
+ * ============================================================================
+ *
+ * the prime factor server creat a queue and run,
+ * waits for input from client. the server calculate the prime factors by the 
+ * prime factor algo and then writes the answer back to client
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4a2.c -o ex4a2
+ * Run: ./ex4a2
+ * ============================================================================
+ * Input: gets prime from client
+ * ============================================================================
+ * Output: send prime factors back to client
+ * ============================================================================
+ */
+
+/**************************
+ * ex4a3: the client
+ * ============================================================================
+ *
+ * The program gets arguments then if it gets zero connects to gcd and 
+ * if gets 1 connects to factor server. the client send the values to the relevant 
+ * server got the result and print it
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4a3.c -o ex4a3
+ * Run: ./ex4a3
+ * ============================================================================
+ * Input: from args of the client.
+ * ============================================================================
+ * Output: the calculation result from the relevant server
+ * ============================================================================
+ */
+ //----------------------------------------------------------------------------
+ 
+ 
+ /**************************
+ * ex4b1: GCD Server
+ * ============================================================================
+ * Thee gcd server makes named pipe and run. waits for input from the client
+ * calculate the gcd by gcd algo and send the result to client
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4b1.c -o ex4b1
+ * Run: ./ex4b1
+ * ============================================================================
+ * Input: got it from client
+ * ============================================================================
+ * Output: writes the result back to client
+ * ============================================================================
+ */
+
+ /**************************
+ * ex4b2: Prime Factor Server
+ * ============================================================================
+ * The factor server makes a fifo and then runs at background,
+ * waits for input from client, calculate the prime factors by the algo
+ * and send the result back to client 	
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4b2.c -o ex4b2
+ * Run: ./ex4b2
+ * ============================================================================
+ * Input: got it from the client
+ * ============================================================================
+ * Output: send the result back to client
+ * ============================================================================
+ */
+
+ /**************************
+ * ex4b3: the client
+ * ============================================================================
+ *
+ * The client program gets arguments then go to the relevant server by reading 1 
+ * to prime factors and 0 to gcd. 
+ * the client gets the relevant result from the relevant server, print it and ends
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4b3.c -o ex4b3
+ * Run: ./ex4b3
+ * ============================================================================
+ * Input: got it from args 
+ * ============================================================================
+ * Output: the relevant result from the relevant server
+ * ============================================================================
+ */
+  //----------------------------------------------------------------------------
+  
+  
+  
+ /**************************
+ * ex4c: generate all the numbers
+ * ============================================================================
+ *
+ * father makes an array and inside it numbers to 2 children.
+ * every child has its own array and checks if random number from father 
+ * appers in his array. if the all numbers were found the child tell to father and 
+ * print his array
+ *
+ * Running States:
+ * Both children finish together.
+ * One child finishes before the other child.
+ *			
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex4c.c -o ex4c
+ * Run: ./ex4c
+ * ============================================================================
+ * Input: no input
+ * ============================================================================
+ * Output: the array of the first child that finish
+ * ============================================================================
+ */
