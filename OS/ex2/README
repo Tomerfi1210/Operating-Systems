@@ -1,0 +1,55 @@
+File: ex2a.c
+Signals
+============================================================================
+Written by: Shahar Aviv- 203489307, Tomer Fisher 205364151
+Login: shaharav, tomerfi
+
+*The program has a master process that forks a child process.
+*Before the child is born the father determines a signal handler which will be
+*activated when the process will be sent
+*The SIGUSR1 signal, and the second SIGTERM signal handler.a
+*In the program there is a loop that rolls ten times in which the father and
+*son must perform the following actions:
+*A. The process goes to a random period of time for a maximum of four seconds.
+*B. The second procedure sends the SIGUSR1 signal.
+*third. The process counts how many signals it sends to the second process.
+*The program will print the number of signals sent at the end.
+
+Compile: gcc -Wall ex2a.c -o ex2a
+Run: ex2a
+
+Input: None
+
+* Output: 1.The father sends a signal first
+*                 2.The son sends a signal first
+*                 3.Neither the father or the son send a signal
+
+//***************************************************************************//
+File: ex2b.c
+Signal Wars
+============================================================================
+Written by: Shahar Aviv- 203489307, Tomer Fisher 205364151
+Login: shaharav, tomerfi
+
+* The program creates a child using fork.
+* Then both the child and the father run in an infinite loop, they generate a
+* random number btw 0 and 7. if they got zero they print and quit.
+* if they got a number btw 1 and 3 they then send a signal to other process.
+* then we set an alarm for 5 seconds and pause.
+* if the alarm went off we go to alarm_handler function print, and exit.
+* if we got a signal b4 the alarm went off(other processed killed)
+* then we go to signal_handler print and continue, advance counter
+* if we get 10 signals, we print and exit that we surrender
+
+Compile: gcc -Wall ex2b.c -o ex2b
+Run: ex2b
+
+* Input: None.
+* ============================================================================
+* Output Possibilities:
+*              1:Father wins and son surrenders
+*              2:Son wins father surrenders
+*              3: one or both end (by getting zero)
+*              4: if other ends then curr process is left alone, and quits
+*
+
