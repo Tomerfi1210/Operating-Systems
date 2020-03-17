@@ -1,0 +1,50 @@
+/**************************
+ * ex5a: client and server- factorization and gcd
+ * ============================================================================
+ * The program has a client with two servers. Each server creates a shared 
+ * memory, and the process front_end connects to both. The front_end waits
+ * until he receives a character from the user and then accordingly activates 
+ * the server needed. One server calculates the gcd
+ * of two numbers, and the other server calculates the prime factorization
+ * of a number. Both the data received from the user and the results are 
+ * written on the shared memory. When the server finishes the calculation,
+ * it sends a signal to the front_end who then prints out the results.
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex5a.c -o ex5a
+ * Run: ./ex5a
+ * ============================================================================
+ * Input: From client. Characters g or d represents the server that the client 
+ * wants to activate. The user then iserts the amount of numbers accordingly.
+ * ============================================================================
+ * Output: The result of calculation done by the server.
+ * ============================================================================
+ */
+ 
+ /**************************
+ * ex5b: generate all my numbers
+ * ============================================================================
+ *
+ * father makes an array and inside it numbers to 2 children.
+ * every child has its own array and checks if random number from father 
+ * appers in his array. if the all numbers were found the child tell to father and 
+ * print his array
+ *
+ * Running States:
+ * Both children finish together.
+ * One child finishes before the other child.
+ *
+ *
+ * Written by: Shahar Aviv- 203489307, Tomer Fisher- 205364151
+ * LogIn: shaharav, tomerfi
+ *
+ * Compile: gcc -Wall ex5b.c -o ex5b
+ * Run: ./ex5b
+ * ============================================================================
+ * Input: no input
+ * ============================================================================
+ * Output: the array of the child that finish first
+ * ============================================================================
+ */
